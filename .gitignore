@@ -17,3 +17,4 @@ data
 # Sublime text files
 jsonbox.sublime-project
 jsonbox.sublime-workspace
+.env
