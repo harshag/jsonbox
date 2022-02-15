@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: jsonbox
+    name: signalx-db
     env: node
     repo: https://github.com/harshag/jsonbox.git
     region: frankfurt
