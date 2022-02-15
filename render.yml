@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: jsonbox
+    env: node
+    repo: https://github.com/harshag/jsonbox.git
+    region: frankfurt
+    buildCommand: yarn; yarn build
+    startCommand: yarn start
+    envVars:
+      - key: MONGODB_URI
+        value: 'MONGODB_URI'
+    autoDeploy: true
