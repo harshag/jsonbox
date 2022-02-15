@@ -4,8 +4,8 @@ services:
     env: node
     repo: https://github.com/harshag/jsonbox.git
     region: frankfurt
-    buildCommand: yarn
-    startCommand: "echo \"$CA_CERT\" > mongodb.ca.crt && node server.js"
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: MONGODB_URI
         value: 'MONGODB_URI'
