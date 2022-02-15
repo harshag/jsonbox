@@ -4,7 +4,6 @@ services:
     env: node
     repo: https://github.com/harshag/jsonbox.git
     region: frankfurt
-    buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: MONGODB_URI
