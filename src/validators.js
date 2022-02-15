@@ -117,6 +117,9 @@ const authenticateRequest = async (req, res, next) => {
         .exec()
       if (firstRecord) {
         if (firstRecord._apiKey) {
+          console.log(firstRecord._apiKey)
+          console.log("  ==  ")
+          console.log(req['apiKey'])
           if (firstRecord._apiKey == req['apiKey']) next()
           else throwError('Invalid API_KEY.', 401)
         } else {
