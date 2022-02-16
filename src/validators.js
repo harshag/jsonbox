@@ -51,7 +51,7 @@ const extractParams = (req, res, next) => {
   const path = req.path
   console.log(path)
   const pathParams = path.split('/').filter(p => !!p)
-  console.log(pathParama)
+  console.log(pathParams)
   const isHexString = /^([0-9A-Fa-f]){24}$/
   const isValidBoxID = /^[0-9A-Za-z_]+$/i
 
